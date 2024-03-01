@@ -1,0 +1,494 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.styling{
+    margin: 1rem;
+    text-align: center;
+    padding: 0px;
+}
+
+.nav{
+    background-color:#333;
+    object-fit: cover;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.bus-title{
+    font-size: 2rem;
+}
+
+.nav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap:1rem;
+}
+
+.nav a{
+    color: inherit;
+    height:100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+}
+
+.nav li.active{
+    background-color: #555;
+}
+
+.nav li:hover{
+    background-color: #777;
+}
+
+
+
+@media (max-width:  768px) {
+    .nav-link {
+    font-size:  1.2rem;
+    }
+    .bus-title {
+    font-size:  1rem; 
+    }
+    .nav{
+        font-size: 0.6rem;
+    }
+    
+}
+
+
+/* Home.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding:   20px;
+    margin:   20px;
+    border-radius:   10px;
+    box-shadow:   0   4px   6px rgba(0,   0,   0,   0.1); 
+}
+
+.image-text-wrapper {
+    position: relative;
+    width:  100vw; 
+    height:  100vh; 
+    overflow: hidden;
+}
+
+.busImage {
+    width:  100%;
+    height:  100%;
+    border-radius:  10px;
+    box-shadow:  0  4px  6px rgba(0,  0,  0,  0.1);  
+}
+
+
+.style{
+    color: red;
+}
+
+.quote {
+    position: absolute;
+    top:  50%; 
+    left:  50%;
+    transform: translate(-50%, -50%); 
+    font-size:  1.5em; 
+    color: #fff; 
+    background-color: rgba(0,  0,  0,  0.5); 
+    padding:  10px;
+    border-radius:  5px;
+}
+
+
+
+
+
+.help {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+.full-screen-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensure the image is behind other content */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+/* Account.css */
+.account-container {
+    text-align: center;
+    margin: 20px;
+}
+.account-container>h1{
+    color: red;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+.sign-in-container,
+.sign-up-container {
+    width:  300px;
+    margin:  10px;
+    padding:  15px;
+    border:  1px solid #ccc;
+    border-radius:  5px;
+    box-shadow:  0  0  10px rgba(0,  0,  0,  0.1);
+}
+input{
+    border: 2px solid black;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width:  768px) {
+    .form-container{
+        display: block;
+    }
+    
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px;
+    background-color: #95bfb7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+.test{
+    color: #0056b3;
+}
+
+
+
+span{
+    color: rgb(206, 30, 30);
+}
+
+.button-con {
+    display: flex;
+    justify-content: space-between;  /* Adjust as needed */
+}
+.goBack1{
+padding-left: 15rem;
+/* margin-right: 0rem; */
+
+}
+
+.signIn{
+    background-color: #333;
+    color: white;
+}
+
+
+
+.find-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.find {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.goBack1 {
+    margin-top:  20px;
+    margin-right: 20px;
+}
+
+
+@media (min-width:  1195px) {
+    .find-container {
+        display: block;
+        justify-content: center;
+    }
+
+    .find {
+        flex-direction: row;
+        gap:  20px;
+        width: auto;
+    }
+
+    .goBack1 {
+        margin-top:  0;
+        margin-left:  20px;
+    }
+}
+
+
+.trip-details {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    border:  1px solid #dee2e6;
+    border-radius:  5px;
+    padding:  20px;
+    margin-bottom:  20px;
+    box-shadow:  0  2px  4px rgba(0,  0,  0,  0.1);
+}
+
+.trip-details p {
+    margin:  0;
+    padding:  5px  0;
+    font-size:  14px;
+    color: #343a40;
+}
+
+.trip-details button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding:  10px  20px;
+    border-radius:  5px;
+    cursor: pointer;
+    margin-top:  10px;
+    font-size:  14px;
+    transition: background-color  0.2s ease;
+}
+
+.trip-details button:hover {
+    background-color: #0056b3;
+}
+
+.trip-details button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+h2 {
+    font-size:  24px;
+    color: #343a40;
+    margin-bottom:  20px;
+}
+
+/* BusManagement.css */
+
+.seat-container {
+    margin-top:  20px;
+    padding:  20px;
+    background-color: #f8f9fa;
+    border:  1px solid #dee2e6;
+    border-radius:  5px;
+    box-shadow:  0  2px  4px rgba(0,  0,  0,  0.1);
+}
+
+.seat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px,  1fr));
+    grid-gap:  10px;
+}
+
+.seat-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9ecef;
+    border-radius:  5px;
+    padding:  5px;
+    cursor: pointer;
+}
+
+.seat-label {
+    margin-left:  5px;
+}
+
+.seat-item input[type="checkbox"] {
+    margin-right:  5px;
+}
+
+
+
+.book-ticket-button {
+    display: block;
+    width:  100%;
+    padding:  10px;
+    margin-top:  20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius:  5px;
+    cursor: pointer;
+    transition: background-color  0.2s ease;
+}
+
+.book-ticket-button:hover {
+    background-color: #0056b3;
+}
+
+.payment-info {
+    margin-top:   20px;
+    text-align: center;
+}
+
+.payment-button {
+    display: inline-block;
+    padding:   10px  20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius:   5px;
+    cursor: pointer;
+    transition: background-color   0.2s ease;
+}
+
+.payment-button:hover {
+    background-color: #218838;
+}
+
+
+.passenger-forms-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:  20px;
+}
+
+.passenger-form {
+    width:  100%;
+    max-width:  300px; /* Adjust based on your design */
+    border:  3px solid #DE3163;
+    box-shadow:  9px  6px  4px #5B2C6F;
+    padding:  7px  11px;
+    background-image: linear-gradient(150deg, #EAFAF1, #E8DAEF  30%, #E5E8E8);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media (min-width:  768px) {
+    .passenger-forms-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+}
+
+
+
+/* TicketCard.css */
+.ticket-card {
+    border:   1px solid #ccc;
+    border-radius:   5px;
+    padding:   20px;
+    margin:   10px;
+    background-color: #f9f9f9;
+    box-shadow:   0   2px   5px rgba(0,   0,   0,   0.1);
+}
+
+.booked {
+    color: green;
+}
+
+.not-booked {
+    color: red;
+}
+
+/* The Modal (background) */
+.ticket-modal {
+    display: none; 
+    position: fixed; 
+    z-index:   1; 
+    left:   0;
+    top:   0;
+    width:   100%; 
+    height:   100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content/Box */
+.ticket-modal-content {
+    background-color: #fefefe;
+    margin:   15% auto; 
+    padding:   20px;
+    border:   1px solid #888;
+    width:   80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size:   28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.cancel-ticket-button {
+    color: red;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.cancel-ticket-button:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
