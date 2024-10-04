@@ -21,8 +21,7 @@ export const fetchTickets = async () => {
         return tickets;
     } catch (error) {
         console.error('Failed to fetch tickets:', error);
-        // Optionally, display a toast for the error as well
-        // toast.error("An error occurred while fetching tickets.");
+        
         throw error; // Re-throw the error so it can be handled by the caller
     }
 };
