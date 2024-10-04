@@ -108,7 +108,6 @@ export default function BusManagement() {
         // Find the selected trip
         const selectedTrip = trips.find((trip) => trip._id === tripId);
         // Calculate the total number of seats (available + booked)
-        // Assuming bookedSeats is an array of seat numbers for the selected trip
         const totalSeats = selectedTrip.availableSeats + selectedTrip.bookedSeats.length;
         // Generate seat numbers based on the total number of seats
         setAvailableSeats(generateSeatNumbers(totalSeats));
@@ -136,7 +135,6 @@ export default function BusManagement() {
 
 
     const isSeatBooked = (seatNumber) => {
-        // Assuming `trips` contains the trip details including bookedSeats
         const selectedTrip = trips.find((trip) => trip._id === selectedTripId);
         return selectedTrip && selectedTrip.bookedSeats.includes(seatNumber);
     };
